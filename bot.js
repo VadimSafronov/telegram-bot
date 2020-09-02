@@ -89,6 +89,7 @@ bot.on('callback_query', function (msg) {
       bot.sendMessage(msg.from.id,NAME2 + '\n' +'ЦБ: ' + RATE2.toFixed(3));
       break;
     }
+     default: bot.sendMessage(msg.from.id, " Oops,error ");
     
   }
   babki(msg);
