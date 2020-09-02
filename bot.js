@@ -95,53 +95,7 @@ bot.on('callback_query', function (msg) {
       bot.sendMessage(msg.from.id,'100 ' +NAME3 + '\n' +'ЦБ: ' + RATE3.toFixed(3));
       break;
     }
-    case '4':
-    {
-      bot.sendMessage(msg.from.id, 'Введите какое количество $ хотите перевести в BYN');
-      
-      bot.once('message', (msg) => {
-        
-      
-      C = msg.text * RATE ;
-
-      bot.sendMessage(msg.from.id, C.toFixed(3) + '  BYN');
-      });
-      break;
-    }
-    case '5':
-    {
-      bot.sendMessage(msg.from.id, 'Введите какое количество € хотите перевести в BYN');
-      
-      bot.once('message', (msg) => {
-        
-      
-        D = msg.text * RATE2 ;
-
-      bot.sendMessage(msg.from.id, D.toFixed(3) + '  BYN');
-      });
-      break;
-
-
-    }
-    case '6':
-    {
-      bot.sendMessage(msg.from.id, 'Введите какое количество P хотите перевести в BYN');
-      
-      bot.once('message', (msg) => {
-        
-      
-      R = msg.text /RATE3/10 ;
-
-      bot.sendMessage(msg.from.id, R.toFixed(3) + '  BYN');
-      });
-      break;
-
-
-    }
-    default:
-    bot.sendMessage(msg.from.id, ' Что-то пошло не так');
     
-  }
   babki(msg);
   
     
