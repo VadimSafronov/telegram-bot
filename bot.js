@@ -89,6 +89,12 @@ bot.on('callback_query', function (msg) {
       bot.sendMessage(msg.from.id,NAME2 + '\n' +'ЦБ: ' + RATE2.toFixed(3));
       break;
     }
+    case '3':
+
+    {
+      bot.sendMessage(msg.from.id,'100 ' +NAME3 + '\n' +'ЦБ: ' + RATE3.toFixed(3));
+      break;
+    }  
      default: bot.sendMessage(msg.from.id, " Oops,error ");
     
   }
